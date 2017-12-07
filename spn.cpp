@@ -64,14 +64,17 @@ int xorone(int a,int b){	//Function to calculate single bit xor.
 
 int main(){
 	int i,j,l,r;
+	string pt_string, key_string;
 	int *pt = new int[16];		//binary input
 	int *key = new int[32];		//binary key
 	int *rkey = new int[16];   	//round key
+	cin>>pt_string;
+	cin>>key_string;
 	for(i=0;i<16;i++){
-		cin>>pt[i];
+		pt_string[i] = pt[i];
 	}
 	for(i=0;i<32;i++){
-		cin>>key[i];
+		key_string[i] = key[i];
 	}
 	l=0;
 	r=15;
